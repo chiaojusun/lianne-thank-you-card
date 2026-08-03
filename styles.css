@@ -1255,6 +1255,23 @@ p {
   font-size: 0.72em;
 }
 
+.unfolded-letter .letter-copy .letter-signoff {
+  margin-top: 1.65rem;
+  color: var(--ink);
+  font-family: "Snell Roundhand", "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-size: clamp(1.25rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.unfolded-letter .letter-copy .letter-date {
+  display: inline-block;
+  margin-top: 0.15rem;
+  color: rgba(23, 53, 59, 0.58);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.7em;
+}
+
 .gift-section {
   padding-bottom: clamp(3rem, 7vw, 6rem);
 }
