@@ -1089,8 +1089,15 @@ p {
   margin: 0;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
   font-weight: 500;
+}
+
+.unfolded-letter h2 {
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
+}
+
+.inline-gift h2 {
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
 }
 
 .sr-only {
