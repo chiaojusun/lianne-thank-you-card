@@ -219,7 +219,6 @@ p {
 .back-pocket,
 .envelope-body,
 .main-card,
-.gift-peek,
 .folded-note,
 .flower,
 .leaf-spray {
@@ -338,47 +337,6 @@ p {
   font-family: "Snell Roundhand", "Brush Script MT", "Segoe Script", cursive;
   font-size: clamp(2.2rem, 5.8vw, 5.25rem);
   line-height: 0.84;
-}
-
-.gift-peek {
-  right: 18%;
-  bottom: 47%;
-  z-index: 4;
-  display: grid;
-  place-items: center;
-  width: 20%;
-  aspect-ratio: 0.85;
-  padding: 1rem 0.55rem;
-  transform: translate(0, -1.4rem) rotate(9deg);
-  border: 2px dashed rgba(255, 255, 255, 0.7);
-  border-radius: 0.6rem;
-  color: var(--ink);
-  background: linear-gradient(145deg, #d9c8ff, #a98cf2);
-  box-shadow: 0 0.8rem 1.6rem rgba(23, 53, 59, 0.16);
-  opacity: 1;
-  transition:
-    transform 850ms cubic-bezier(0.16, 1, 0.3, 1) 350ms,
-    opacity 500ms ease 350ms;
-}
-
-.gift-peek::before {
-  position: absolute;
-  top: -0.6rem;
-  width: 2.2rem;
-  height: 1.2rem;
-  border: 0.35rem solid var(--violet);
-  border-bottom: 0;
-  border-radius: 999px 999px 0 0;
-  content: "";
-}
-
-.gift-peek span {
-  display: block;
-  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
-  font-size: clamp(0.9rem, 2.2vw, 1.65rem);
-  font-weight: 700;
-  line-height: 1.05;
-  text-align: center;
 }
 
 .folded-note {
@@ -775,7 +733,7 @@ p {
 .is-letter-open .card-stage {
   display: block;
   width: min(100%, 72rem);
-  min-height: clamp(116rem, 156vw, 142rem);
+  min-height: clamp(58rem, 88vw, 76rem);
   margin: 0 auto;
   padding-top: 0.5rem;
   padding-bottom: clamp(4rem, 8vw, 7rem);
@@ -804,11 +762,6 @@ p {
   opacity: 0;
   transform: translateY(-7rem) rotate(-4deg) scale(1.05);
   transition-delay: 0ms, 1150ms;
-}
-
-.is-open .gift-peek {
-  opacity: 1;
-  transform: translate(0, -1.4rem) rotate(9deg);
 }
 
 .is-open .folded-note {
@@ -1151,20 +1104,30 @@ p {
   border: 0;
 }
 
-.handwritten-wrap {
-  display: grid;
-  place-items: center;
-  padding: clamp(0.35rem, 1.5vw, 0.85rem) clamp(0.35rem, 1.5vw, 0.85rem) clamp(0.9rem, 2vw, 1.35rem);
+.letter-copy {
+  width: min(100%, 48rem);
+  margin: 0 auto;
+  padding: clamp(0.4rem, 2vw, 1.2rem) clamp(0.2rem, 1vw, 0.6rem) clamp(0.8rem, 2vw, 1.5rem);
+  color: rgba(23, 53, 59, 0.88);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.12rem, 2.5vw, 1.42rem);
+  line-height: 1.78;
 }
 
-.handwritten-wrap img {
-  display: block;
-  width: min(100%, 42rem);
-  height: auto;
-  border-radius: 0.55rem;
-  box-shadow:
-    0 0.8rem 1.8rem rgba(23, 53, 59, 0.13),
-    0 0 0 1px rgba(16, 52, 107, 0.08);
+.letter-copy p {
+  margin: 0 0 1.15rem;
+}
+
+.letter-salutation {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 3.3vw, 2rem);
+}
+
+.letter-signoff {
+  color: var(--ink);
+  font-family: "Bradley Hand", "Segoe Print", cursive;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  line-height: 1.5;
 }
 
 .inline-gift {
@@ -1521,7 +1484,7 @@ p {
 
   .is-letter-open .card-stage {
     width: 100%;
-    min-height: clamp(126rem, 360vw, 164rem);
+    min-height: clamp(68rem, 190vw, 88rem);
   }
 
   .is-open .unfolded-letter {
@@ -1544,7 +1507,6 @@ p {
   }
 
   .main-card,
-  .gift-peek,
   .folded-note,
   .leaf-spray,
   .flower {
