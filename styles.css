@@ -1130,6 +1130,11 @@ p {
   line-height: 1.5;
 }
 
+.letter-date {
+  color: rgba(23, 53, 59, 0.58);
+  font-size: 0.78em;
+}
+
 .inline-gift {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
