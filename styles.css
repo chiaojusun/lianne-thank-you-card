@@ -180,8 +180,7 @@ a:focus-visible {
 }
 
 .eyebrow,
-.letter-kicker,
-.gift-kicker {
+.letter-kicker {
   margin: 0 0 0.65rem;
   color: var(--teal-deep);
   font-size: 0.78rem;
@@ -1084,8 +1083,7 @@ p {
   }
 }
 
-.unfolded-letter h2,
-.inline-gift h2 {
+.unfolded-letter h2 {
   margin: 0;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -1094,10 +1092,6 @@ p {
 
 .unfolded-letter h2 {
   font-size: clamp(1.9rem, 4.4vw, 3.1rem);
-}
-
-.inline-gift h2 {
-  font-size: clamp(1.35rem, 2.8vw, 2rem);
 }
 
 .sr-only {
@@ -1142,20 +1136,7 @@ p {
   font-size: 0.78em;
 }
 
-.inline-gift {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(1rem, 3vw, 1.5rem);
-  margin-top: clamp(1.5rem, 4vw, 2.4rem);
-  padding: clamp(1rem, 3vw, 1.5rem);
-  border: 1px solid rgba(7, 91, 104, 0.12);
-  border-radius: 1rem;
-  background: rgba(197, 173, 255, 0.16);
-}
-
-.letter-section,
-.gift-section {
+.letter-section {
   position: relative;
   width: min(100% - 2rem, 70rem);
   margin: 0 auto;
@@ -1177,8 +1158,7 @@ p {
   box-shadow: 0 1.5rem 3rem rgba(23, 53, 59, 0.08);
 }
 
-.letter-card,
-.gift-card {
+.letter-card {
   position: relative;
   border: 1px solid rgba(7, 91, 104, 0.12);
   border-radius: 1.25rem;
@@ -1225,8 +1205,7 @@ p {
   font-weight: 700;
 }
 
-.letter-card h2,
-.gift-card h2 {
+.letter-card h2 {
   margin: 0;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -1277,66 +1256,6 @@ p {
   color: rgba(23, 53, 59, 0.58);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.7em;
-}
-
-.gift-section {
-  padding-bottom: clamp(3rem, 7vw, 6rem);
-}
-
-.gift-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: clamp(1rem, 3vw, 2rem);
-  padding: clamp(1.2rem, 3vw, 2rem);
-}
-
-.gift-icon {
-  position: relative;
-  width: clamp(4.4rem, 12vw, 6.3rem);
-  aspect-ratio: 1;
-  border-radius: 1rem;
-  background: rgba(15, 127, 142, 0.12);
-}
-
-.gift-icon::before {
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  bottom: 18%;
-  height: 48%;
-  border-radius: 0.3rem;
-  content: "";
-  background: linear-gradient(145deg, var(--aqua), #f1f9f7);
-  box-shadow: inset 0 0 0 2px rgba(7, 91, 104, 0.2);
-}
-
-.gift-icon::after {
-  position: absolute;
-  left: 18%;
-  right: 18%;
-  top: 31%;
-  height: 0.55rem;
-  border-radius: 999px;
-  content: "";
-  background: var(--violet);
-}
-
-.gift-icon span {
-  position: absolute;
-  left: 47%;
-  top: 24%;
-  width: 0.55rem;
-  height: 55%;
-  border-radius: 999px;
-  background: var(--violet);
-}
-
-.gift-copy {
-  max-width: 38rem;
-  margin: 0.75rem 0 0;
-  color: rgba(23, 53, 59, 0.76);
-  line-height: 1.65;
 }
 
 .botanical {
@@ -1481,11 +1400,6 @@ p {
 
   .main-card p {
     font-size: clamp(2rem, 11vw, 4.5rem);
-  }
-
-  .inline-gift {
-    grid-template-columns: 1fr;
-    justify-items: start;
   }
 
   .botanical {
